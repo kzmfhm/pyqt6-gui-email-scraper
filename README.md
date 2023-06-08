@@ -1,2 +1,2 @@
-# pyqt6-gui-email-scraper
+# # pyqt6-gui-email-scraper
 new repo

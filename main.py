@@ -11,17 +11,17 @@ from PyQt6.QtWidgets import (
     QLineEdit,
     QPushButton,
     QMessageBox,
-    QScrollArea,
+    QScrollArea
 )
 from PyQt6.QtGui import QFont
 from PyQt6.QtCore import Qt
-
 
 class EmailScraperGUI(QMainWindow):
     def __init__(self):
         super().__init__()
         self.setWindowTitle("Email-Scraper")
         self.setGeometry(100, 100, 750, 550)
+        self.setStyleSheet("background-color:#03001C;")
 
         main_widget = QWidget(self)
         self.setCentralWidget(main_widget)
@@ -37,16 +37,16 @@ class EmailScraperGUI(QMainWindow):
 
         scroll_layout = QVBoxLayout(scroll_content)
         scroll_layout.setContentsMargins(0, 0, 0, 0)
-        scroll_layout.setAlignment(Qt.AlignmentFlag.AlignTop)  # Align to the top
+        scroll_layout.setAlignment(Qt.AlignmentFlag.AlignTop)  
 
         self.entry = QLineEdit()
         self.entry.setPlaceholderText("Enter URL:")
         self.entry.setFont(QFont("Arial", 16, QFont.Weight.Bold))
-
+        
         self.scrape_btn = QPushButton("Scrape Email")
         self.scrape_btn.setFont(QFont("Arial", 18, QFont.Weight.Bold))
         self.scrape_btn.clicked.connect(self.scrape_emails)
-
+        
         self.save_btn = QPushButton("Save Email")
         self.save_btn.setFont(QFont("Arial", 18, QFont.Weight.Bold))
         self.save_btn.clicked.connect(self.save_email)
@@ -63,7 +63,7 @@ class EmailScraperGUI(QMainWindow):
         layout.addWidget(self.save_btn)
         layout.addWidget(self.go_back_btn)
         scroll_content.setLayout(scroll_layout)
-        
+
     def run(self):
         self.scroll_area.verticalScrollBar().setValue(0)  
         self.show()
