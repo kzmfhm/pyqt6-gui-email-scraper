@@ -121,7 +121,7 @@ class EmailScraperGUI(QMainWindow):
                         email = email_parts[1]
                         file.write(email + "\n")
 
-        QMessageBox.information(self, "Emails Saved", "Emails have been saved in the Downloads folder.")
+        QMessageBox.information(self, "Emails Saved", "Emails have been saved in the Downloads")
         self.save_btn.setVisible(False)
         self.go_back_btn.setVisible(True)
 

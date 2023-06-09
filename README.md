@@ -1,9 +1,9 @@
-## Email-Scraper 🚀
+## Email-Scraper 🐬
 
 - An email scraper application built using the PyQt6 and beautifulsoup library in Python. 
 - It allows users to enter a URL, scrape emails from the webpage's source code, and save the scraped emails to a file.
 
-## Dependencies 💥
+## Dependencies 🐋
 
 - pyqt6: A custom module that provides  enhanced functionality for gui widgets.
 - messagebox: A module from the pyqt6 library used to display messages and prompts to the user.
@@ -12,7 +12,7 @@
 - requests: A library for making HTTP requests to retrieve the webpage source code.
 - BeautifulSoup: A library for parsing HTML and XML documents, used for extracting information from the webpage source code.
 
-## How to Run 🚀
+## How to Run 🪼
 
 - Clone the repository: git clone https://github.com/kzmfhm/pyqt6-gui-email-scraper
 - Navigate to the project directory: cd gui-email-scraper
@@ -23,7 +23,7 @@
 - Install the required dependencies: pip install -r requirements.txt
 - Run command in root directory: python3 main.py
 
-## Usage 📃
+## Usage 🦢
 
 - Run the script in a Python environment.
 - The GUI window titled "Email-Scraper" will appear.
