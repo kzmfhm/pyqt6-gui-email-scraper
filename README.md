@@ -47,12 +47,12 @@
 - Click the "Save Email" button to save the scraped emails to a file named "scraped_emails.txt" in the Downloads.
 - A message box will appear, confirming that the emails have been saved.
 - Click the "Go Back" button to reset the application and enter a new URL.
-- If email is not found on website page then a message is appear "Email not Found" on window scrollable frame and Go Back button will also appear that allow user to enter another url to continue process.
+- If email is not found on website page then a message is appear "Email not Found" on window scrollable frame and Go Back      button will also appear that allow user to enter another url to continue process.
 - if user enter invalid url accidently then "Invalid Url" message will also appear on scrollable window frame.
 
 ## ⭐️ Support
 
-Give a ⭐️ if this project helped you!
+Give a ⭐️ if this project helped you!!
 
 ## License ©
 
