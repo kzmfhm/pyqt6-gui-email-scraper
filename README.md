@@ -4,8 +4,6 @@
 <<<<<<< HEAD
 - It allows users to enter a URL, scrape emails from the webpage's source code, and save the scraped emails to a file
 
-### Screenshots
-
 ## Enter Url
 ![Enter URL](<images/image1.png>)
 
@@ -18,9 +16,6 @@
 ## Go Back
 ![Go Back](<images/image4.png>)
 
-=======
-- It allows users to enter a URL, scrape emails from the webpage's source code, and save the scraped emails to a file.
->>>>>>> 603d93debc744c3204b8ec7d8e1e6cc48838e011
 ## Dependencies 🐋
 
 - pyqt6: A custom module that provides  enhanced functionality for gui widgets.
