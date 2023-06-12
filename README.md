@@ -1,7 +1,6 @@
 ## Email-Scraper 🐬
 
 - An email scraper application built using the PyQt6 and beautifulsoup library in Python. 
-
 - It allows users to enter a URL, scrape emails from the webpage's source code, and save the scraped emails to a file
 
 ## Enter Url
@@ -10,7 +9,7 @@
 ## Scraping result
 ![Scraping emails](<images/image2.png>)
 
-## Files saved in downloads
+## Emails are saved in downloads
 ![Text Files being saved](<images/image3.png>)
 
 ## Go Back
