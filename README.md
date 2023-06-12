@@ -2,7 +2,6 @@
 
 - An email scraper application built using the PyQt6 and beautifulsoup library in Python. 
 - It allows users to enter a URL, scrape emails from the webpage's source code, and save the scraped emails to a file.
-
 ## Dependencies 🐋
 
 - pyqt6: A custom module that provides  enhanced functionality for gui widgets.
