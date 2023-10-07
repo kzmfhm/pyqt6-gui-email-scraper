@@ -15,7 +15,6 @@ from PyQt6.QtWidgets import (
 )
 from PyQt6.QtGui import QFont
 from PyQt6.QtCore import Qt
-
 class EmailScraperGUI(QMainWindow):
     def __init__(self):
         super().__init__()
@@ -42,18 +41,19 @@ class EmailScraperGUI(QMainWindow):
         self.entry = QLineEdit()
         self.entry.setPlaceholderText("Enter URL:")
         self.entry.setFont(QFont("Arial", 16, QFont.Weight.Bold))
-        
+        self.entry.setStyleSheet("color: white;")
+
         self.scrape_btn = QPushButton("Scrape Email")
-        self.scrape_btn.setFont(QFont("Arial", 18, QFont.Weight.Bold))
+        self.set_button_style(self.scrape_btn)
         self.scrape_btn.clicked.connect(self.scrape_emails)
-        
+
         self.save_btn = QPushButton("Save Email")
-        self.save_btn.setFont(QFont("Arial", 18, QFont.Weight.Bold))
+        self.set_button_style(self.save_btn)
         self.save_btn.clicked.connect(self.save_email)
         self.save_btn.setVisible(False)
 
         self.go_back_btn = QPushButton("Go Back")
-        self.go_back_btn.setFont(QFont("Arial", 18, QFont.Weight.Bold))
+        self.set_button_style(self.go_back_btn)
         self.go_back_btn.clicked.connect(self.go_back)
         self.go_back_btn.setVisible(False)
 
@@ -63,6 +63,12 @@ class EmailScraperGUI(QMainWindow):
         layout.addWidget(self.save_btn)
         layout.addWidget(self.go_back_btn)
         scroll_content.setLayout(scroll_layout)
+
+    def set_button_style(self, button):
+        button_style = "color: white; background-color: #3E76EC; border: 1px solid #3E76EC;"
+        button.setFont(QFont("Arial", 18, QFont.Weight.Bold))
+        button.setStyleSheet(button_style)
+
 
     def run(self):
         self.scroll_area.verticalScrollBar().setValue(0)  
@@ -137,7 +143,7 @@ class EmailScraperGUI(QMainWindow):
         self.scrape_btn.setVisible(True)
         self.save_btn.setVisible(False)
         self.go_back_btn.setVisible(False)
-
+       
     def run(self):
         self.show()
 
