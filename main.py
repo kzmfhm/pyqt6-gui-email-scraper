@@ -63,9 +63,10 @@ class EmailScraperGUI(QMainWindow):
         layout.addWidget(self.save_btn)
         layout.addWidget(self.go_back_btn)
         scroll_content.setLayout(scroll_layout)
-
+        list_box_style = "color:white;padding-left:5px; padding-top:10px;font-size:14px"
+        scroll_content.setStyleSheet(list_box_style)
     def set_button_style(self, button):
-        button_style = "color: white; background-color: #3E76EC; border: 1px solid #3E76EC;"
+        button_style = "color: white; background-color: #3E76EC; border: 1px solid #3E76EC; "
         button.setFont(QFont("Arial", 18, QFont.Weight.Bold))
         button.setStyleSheet(button_style)
 
